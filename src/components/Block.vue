@@ -32,10 +32,10 @@ this.timer = setInterval(() =>{
      },
      stopTimer(){
        clearInterval(this.timer)
-       console.log(this.reactionTime)
+     this.$emit('end',this.reactionTime)
      }
    }
-  //  displays when the block is shown
+  //  displays when the block is shown life cyccycle hooks
 //    updated(){
 // console.log('ive arrived')
 //    },
