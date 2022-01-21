@@ -45,7 +45,7 @@ this.timer = setInterval(() =>{
 }
 </script>
 
-<style>
+<style >
 .block {
     width: 400px;
     border-radius: 20px;
@@ -54,6 +54,13 @@ this.timer = setInterval(() =>{
     text-align: center;
     padding: 100px 0;
     margin: 40px auto;
+}
+button{
+  background-color: #0faf87;
+  color: white;
+}
+button[disabled]{
+  opacity: 0;
 }
 
 </style>
