@@ -1,5 +1,5 @@
 <template>
-  <div class="block">
+  <div class="block" v-if="showBlock">
       click me
   </div>
 
@@ -7,7 +7,24 @@
 
 <script>
 export default {
-   props:['delay']
+   props:['delay'],
+   data(){
+     return{
+       showBlock:false
+     }
+   },
+  //  for timer
+   mounted(){
+     console.log('mounted')
+     setTimeout(()=>{
+       this.showBlock = true
+       console.log(this.delay)
+     },this.delay
+     )
+   },
+   updated(){
+
+   }
 }
 </script>
 
